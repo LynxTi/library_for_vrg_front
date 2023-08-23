@@ -1,0 +1,36 @@
+.modal-overlay
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, .6)
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+.modal
+  position: relative
+  background-color: var(--bg-main-color)
+  border-radius: 15px
+  padding: 20px
+  max-width: 400px
+  width: 100%
+  max-height: 100%
+  overflow-y: auto
+  display: flex
+  gap: 20px
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  @include mediaMobileLargeUp
+    padding: 30px 50px
+    max-height: calc(100% - 50px)
+
+.modal__divider
+  flex-shrink: 0
+
+@import "modal__close-button"
+@import "modal__header"
+@import "modal__footer"
