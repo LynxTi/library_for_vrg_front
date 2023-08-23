@@ -1,6 +1,6 @@
 <template>
   <div class="book-form">
-    <div class="book-form__title text-bold"> {{ $t("global.create_author") }}</div>
+    <div class="book-form__title text-bold"> {{ $t("global.createBook") }}</div>
     <input type="text" v-model="name" class="ui-input" :placeholder="$t('global.name_book')"/>
     <SelectInput
         v-if="genres"

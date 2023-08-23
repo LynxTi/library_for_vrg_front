@@ -2,12 +2,13 @@
   <ProxyModal
       ref="modal"
   >
-    <div class="remoove-book-modal">
-      Ви впевнені що хочете видилати цього автора?
+    <div class="book-form">
+      <div class="remoove-book-modal text-bold">
+        {{$t('global.remove_author_title')}}
+      </div>
+      <div class="custom-button" @click="remove">{{ $t('global.remove')}}</div>
+      <div class="custom-button" @click="close">{{ $t('global.not_remove')}}</div>
     </div>
-    <div class="custom-button" @click="remove">Видалити</div>
-    <div class="custom-button" @click="close">Нехай буде</div>
-
   </ProxyModal>
 </template>
 

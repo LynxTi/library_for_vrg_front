@@ -2,12 +2,13 @@
   <ProxyModal
       ref="modal"
   >
-    <div class="remoove-book-modal">
-     {{ $t('global.confirm_remove_book')}}
+    <div class="book-form">
+      <div class="remoove-book-modal text-bold">
+       {{ $t('global.confirm_remove_book')}}
+      </div>
+      <div class="custom-button" @click="remove">{{ $t('global.remove')}}</div>
+      <div class="custom-button" @click="close">{{ $t('global.not_remove')}}</div>
     </div>
-    <div class="custom-button" @click="remove">{{ $t('global.remove')}}</div>
-    <div class="custom-button" @click="close">{{ $t('global.not_remove')}}</div>
-
   </ProxyModal>
 </template>
 

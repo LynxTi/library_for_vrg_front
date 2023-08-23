@@ -1,8 +1,8 @@
 <template>
 
-  <div class="create-author-form">
+  <div class="book-form">
+    <div class="book-form__title text-bold"> {{ $t("global.createBook") }}</div>
     <input type="text" v-model="name" class="ui-input" :placeholder="$t('global.nameAuthor')"/>
-
     <button class="custom-button" @click="create" :disabled="disabledBtn">{{$t('global.add_author')}}</button>
   </div>
 </template>

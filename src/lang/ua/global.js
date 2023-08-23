@@ -13,5 +13,6 @@ export default {
  edited_author: 'Редагування автора',
  books: "Книги",
  authors: "Автори",
- create_author: 'Створення автора'
+ create_author: 'Створення автора',
+ remove_author_title: 'Ви впевнені що хочете видилати цього автора?',
 }
