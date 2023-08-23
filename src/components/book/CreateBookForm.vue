@@ -1,15 +1,14 @@
 <template>
-  <div class="create-book-form">
+  <div class="book-form">
+    <div class="book-form__title text-bold"> {{ $t("global.create_author") }}</div>
     <input type="text" v-model="name" class="ui-input" :placeholder="$t('global.name_book')"/>
     <SelectInput
-        class="the-header__item"
         v-if="genres"
         :options="genres"
         v-model="genre"
         :placeholder="$t('global.selectGenre')"
     />
     <SelectInput
-        class="the-header__item"
         v-if="authors"
         :options="authors"
         v-model="author"

@@ -13,4 +13,5 @@ export default {
  edited_author: 'Редагування автора',
  books: "Книги",
  authors: "Автори",
+ create_author: 'Створення автора'
 }
